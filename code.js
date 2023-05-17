@@ -5,8 +5,8 @@ function store(){
     let laststName=document.getElementById("last_name");
 
     //cookie
-    let cookie_signup=document.cookie;
-    cookie_signup= "email=email.value ; password= email.value " ;
+   /* let cookie_signup=document.cookie;
+    cookie_signup= "email=email.value ; password= password.value " ;*/
     let lowerCaseLetters = /[a-z]/g;
     let upperCaseLetters = /[A-Z]/g;
     let numbers = /[0-9]/g;
@@ -61,11 +61,17 @@ function check(){
 
       //---------------------HOME------------------------------//
 
-let hamburger = document.querySelector(".hamburger");
-let navLinks = document.getElementById("nav-links");
-let links = document.querySelectorAll(".links");
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('hide');
-  hamburger.classList.toggle('lines-rotate');
-});
+ let hamburger = document.querySelector('.hamburger');
+  let navLinks = document.getElementById('nav-links');
+ let links = document.querySelectorAll('.links');
+      
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('hide');
+   hamburger.classList.toggle('lines-rotate');
+     });
+      
+ for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', () => {
+     navLinks.classList.toggle('hide');
+        });
+      }

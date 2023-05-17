@@ -6,14 +6,25 @@
     text-decoration: none;
     text-align: center;
   }
-  
+  h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+  }
+ img{
+    width: 70px;
+    height: 30px;
+    float: left;
+    margin-right: 5px;
+    
+  }
+
   body {
     position: relative;
     height: 100vh;
   }
+
   nav {
-   /* background-color: #213f2af5;*/
-   background-color: #4b8b5ef5;
+    background-color: #4b8b5ef5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,13 +52,15 @@
     color: white;
   }
   li a:hover {
-   /* color: #f1c40f;*/
     color:rgb(240, 205, 159);
-    border-bottom: 4px solid rgb(240, 205, 159);
+    border-bottom: 4px rgb(240, 205, 159) solid;
     transition: 0.5s;
   }
+  .hide {
+    top: 70px;
+  }
   
-
+  @media screen and (max-width: 700px){
   /* burge line بتاع ال menue*/
   .hamburger {
     display: flex;
@@ -57,10 +70,50 @@
     padding: 10px;
     margin-right: -10px;
   }
-
   .lines {
     display: block;
     background-color: white;
     height: 2px;
     width: 35px;
   }
+  .lines-rotate {
+    background-color: rgb(146, 146, 146);
+    border-radius: 5px;
+  }
+
+  nav {
+    position: relative;
+    padding: 15px 20px;
+  }
+
+  ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    background-color: rgb(240, 205, 159);
+    padding: 35px 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.363);
+  
+  }
+  li a {
+    color: rgba(12, 11, 11, 0.836);
+  }
+
+  li {
+    text-align: center;
+    width: 90vw;
+  }
+
+  li a:hover {
+    font-weight: bold;
+    color: #252b31;
+    border: none;
+    letter-spacing: 3px;
+  }
+
+}
