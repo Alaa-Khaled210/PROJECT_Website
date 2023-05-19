@@ -21,9 +21,12 @@
   body {
     position: relative;
     height: 100vh;
+   /* background-color: rgb(166, 213, 193);*/
+  /* background-color: #95baa5;*/
+  
   }
 
-  nav {
+  #navbar {
     background-color: #4b8b5ef5;
     display: flex;
     justify-content: space-between;
@@ -81,7 +84,7 @@
     border-radius: 5px;
   }
 
-  nav {
+  #navbar {
     position: relative;
     padding: 15px 20px;
   }
@@ -92,7 +95,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -300px;
+    top: -400px;/*-300*/
     right: 0;
     background-color: rgb(240, 205, 159);
     padding: 35px 0;
@@ -117,3 +120,106 @@
   }
 
 }
+button{
+  display: block;
+    width: 10%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #95baa5;
+    border-color: rgb(137, 219, 137);
+    min-width: 100px;
+    color: rgb(28, 103, 9);
+}
+
+header{
+  background-image: url('./images/header.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  height:100vh;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/*header h1{
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+  font-family: cursive;
+}*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*gallary*/
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 702px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.aboutus{
+background-image: url("images/aboutus.jpg");
+background-attachment: fixed;  
+background-size: cover;
+height:100vh;
+position: relative;
+text-align: left;
+color: white;
+}
+
+
+footer{
+  
+  background-color:#1d9b58 ;
+  font-size: small;
+  margin-top: auto;/*push the footer to the bottom of the page*/
+  font-family: cursive;
+  padding-bottom: 3px;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+

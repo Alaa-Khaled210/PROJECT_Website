@@ -4,9 +4,7 @@ function store(){
     let firstName=document.getElementById("fist_name");
     let laststName=document.getElementById("last_name");
 
-    //cookie
-   /* let cookie_signup=document.cookie;
-    cookie_signup= "email=email.value ; password= password.value " ;*/
+
     let lowerCaseLetters = /[a-z]/g;
     let upperCaseLetters = /[A-Z]/g;
     let numbers = /[0-9]/g;
@@ -53,10 +51,63 @@ function check(){
 
     if(Login_email.value == storedEmail && Login_password.value == storedPw){
         alert('You are logged in.');
+        
+
     }else{
         alert('Error on login');
     }
 }
+
+
+//----------------cookies---------------------//
+
+/*
+function setCookie(cname, cvalue) {
+     document.cookie = cname + "=" + cvalue + ";path=.";
+   }
+ 
+   function getCookie(cname) {
+     let name = cname + "=";
+     let ca = document.cookie.split(';');
+     for(let i = 0; i < ca.length; i++) {
+       let c = ca[i];
+       while (c.charAt(0) == ' ') {
+         c = c.substring(1);
+       }
+       if (c.indexOf(name) == 0) {
+         return c.substring(name.length, c.length);
+       }
+     }
+     return "";
+   }
+ 
+   function checkCookie() {
+    let user = getCookie("username");
+    if (user != "") { //still login
+      alert("Welcome again " + user);
+    } else {//log out -->> log in
+        // try to make him take the name from the text field
+    //    user = prompt("Please enter your name:","");
+       user = document.getElementById("email").value;
+
+       if (user != "" && user != null) {
+         setCookie("username", user, 30);
+       }
+    }
+  }
+
+
+  function deleteCookie() {
+    const cookies = document.cookie.split(";");
+
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i];
+        const eqPos = cookie.indexOf("=");
+        const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        alert("cookie is deleted");
+    }
+}*/
 
 
       //---------------------HOME------------------------------//
@@ -75,3 +126,5 @@ function check(){
      navLinks.classList.toggle('hide');
         });
       }
+//---------------------scroll page with nav-----
+  
