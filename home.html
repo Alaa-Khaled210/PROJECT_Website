@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Home.css">
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"/>
+    
 </head>
 <body>
   <header>
@@ -25,8 +35,9 @@
     <li><a href="blogs.html" class="links">Blogs</a></li>
     <li><a href="shop.html" class="links">Shop</a></li>
     <li><a href="About_Us.html" class="links">About</a></li>
+    <li><a href="profile.html" class="links">profile</a></li>
     <li><a href="#" class="links">Contact</a></li>
-    <li><button><a href="login.html" class="links">Log_out</a></button></li>
+    <li><button onclick="deleteCookie()"><a href="login.html" class="links">Log_out</a></button></li>
   </ul>
         </nav>
           
@@ -49,74 +60,131 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="details.html">
-      <img src="./images/flower1.png" alt="Cinque Terre" width="600" height="400">
+      <img  class="icons"src="https://www.allaboutgardening.com/wp-content/uploads/2021/11/Big-Leaf-Lantana.jpg" alt="Cinque Terre" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Bigleaf Lantana</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="#">
-      <img src="./images/flower1.png" alt="Forest" width="600" height="400">
+    <a target="_blank" href="details.html">
+      <img class="icons" src="https://www.allaboutgardening.com/wp-content/uploads/2021/11/Babys-Breath.jpg" alt="Forest" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Baby's Breath</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="#">
-      <img src="./images/flower1.png" alt="Northern Lights" width="600" height="400">
+    <a target="_blank" href="details.html">
+      <img  class="icons" src="https://www.allaboutgardening.com/wp-content/uploads/2021/11/Bearberry.jpg" alt="Northern Lights" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Bearberry </div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="#">
-      <img src="./images/flower1.png" alt="Mountains" width="600" height="400">
+    <a target="_blank" href="details.html">
+      <img class="icons"src="https://www.allaboutgardening.com/wp-content/uploads/2021/11/Blue-Grass.jpg" alt="Mountains" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Blue-Eyed Grass </div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="#">
-      <img src="./images/flower1.png" alt="Mountains" width="600" height="400">
+    <a target="_blank" href="details.html">
+      <img src="https://www.allaboutgardening.com/wp-content/uploads/2022/02/Busy-Lizzie.jpg" alt="Mountains" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Busy Lizzie </div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="#">
-      <img src="./images/flower1.png" alt="Mountains" width="600" height="400">
+    <a target="_blank" href="details.html">
+      <img src="https://www.allaboutgardening.com/wp-content/uploads/2021/11/Camellia.jpg" alt="Mountains" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Camellia</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="#">
-      <img src="./images/flower1.png" alt="Mountains" width="600" height="400">
+    <a target="_blank" href="details.html">
+      <img src="https://www.allaboutgardening.com/wp-content/uploads/2021/11/Calla-Lily.jpg" alt="Mountains" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Calla Lily </div>
   </div>
 </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="details.html">
+      <img src="https://www.allaboutgardening.com/wp-content/uploads/2021/12/Cupcakes-White.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Cupcakes White</div>
+  </div>
+</div>
+
 <div class="clearfix"></div> 
+<footer>
+  <div class="row primary">
+    <div class="column about">
+      <em><h3>About us</h3></em>
+      <p>
+     <em> <p style="padding: 5px; margin: 10px;">Flowers come in thousands of different shapes and color combinations,
+          so there is sure to be a flower that speaks to your unique personality! If that seems like a lot to sort through, have no fear — here With  <mark>" Alaa Khaled " and " Sara Abd_Elhakiem " </mark>list  of the most popular flower types.
 
+          <p style="color: rgb(107, 153, 131);font-weight: bold;"> _And you can buy one of them in coming soon_</p>
+      </p> </em>
+    </div>
+  
+    <div class="column subscribe">
+   <em>   <h3>Subscribe for new flower isA</h3></em>
+      <div>
+        <input type="email" placeholder="Your email id here" />
+        <button>Subscribe</button>
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-twitter-square"></i>
+      </div>
+    </div>
+  </div>
+  <div class="row secondary">
+    <div>
+      <p>
+        <i class="fas fa-phone-alt"></i>
+      </p>
+      <p>+12 123456789</p>
+    </div>
+    <div>
+      <p><i class="fas fa-envelope"></i></p>
+      <p>mail@domain.com</p>
+    </div>
+    <div>
+      <p><i class="fas fa-map-marker-alt"></i></p>
+      <p>1234 Pearl Street</p>
+    </div>
+  </div>
+  <div class="row copyright">
+    <p>Copyright &copy; 2023 | Auther 1 : Alaa Khaled | Auther 2 : Sara Abd-Elhakeam  </p>
+    
+  <a href="">alaa.khaled.ramadan@gmail.com</a>
+  </div>
+</footer>
 
-
+<!--
 <footer>
   <p>Auther1 : Alaa Khaled </p>
-  <p>Auther : Sara Abd-Elhakem </p>
+  <p>Auther 2 : Sara Abd-Elhakem </p>
   <a href="">alaa.khaled.ramadan@gmail.com</a>
 </footer>
+-->
  <script src="code.js"></script>
 </body>
 </html>

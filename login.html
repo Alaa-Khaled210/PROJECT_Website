@@ -26,13 +26,15 @@
     <label for="password">Password: <input id="Login_password" type="password" name="password" placeholder="Enter Your Password" required/></label>
    
     <div id="remember">
-        <label for="rememberMe"><input type="checkbox" value="lsRememberMe" id="rememberMe" class="inline">
-        Remember me</label>
+        <label for="rememberMe"><input type="checkbox" value="lsRememberMe" id="rememberMe" class="inline" onclick="checkCookie()">
+            Remember me</label>
+    
         
     </div>
     <input id= "login_btn" type="submit" value="Login" onclick="check()">
 
 </fieldset>
 </form>
+<script src="code.js"></script>
 </body>
 </html>

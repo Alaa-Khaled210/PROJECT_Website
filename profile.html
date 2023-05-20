@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_Form.css">
+    <title>profile</title>
+</head>
+<body onload="edit()">
+    
+ <header>
+    <div class="circle">
+        <br>
+  <h1> <p> profile page </p> </h1>
+</div>
+</header>
+
+
+<!-- <form >action="login.html" -->
+<form >
+    <fieldset>
+        <label for="first_name"> Your First Name: <input id="fist_name" type="text" name="fist_name" required/></label>
+        <label for="last_name"> Your Last Name: <input id="last_name" type="text" name="last_name" required/></label>
+        <label for="email"> Your Email: <input id="email" type="email" name="email" placeholder="Email" required/></label>
+        <label for="password">Create a New Password: <input id="password" type="password" name="password" placeholder="Password" required/></label>
+       
+        <ul class="helper-text">
+            <li class="length">Must be at least 8 characters long.</li>
+            <li class="lowercase">Must contain a lowercase letter.</li>
+            <li class="uppercase">Must contain an uppercase letter.</li>
+            <li class="special">Must contain a number or special character.</li>
+        </ul>
+    
+    
+    
+    </fieldset>
+
+    <input type="submit" value="save changes" onclick="store()"/>
+
+    </form>
+
+
+
+<script src="code.js">
+
+</script>
+</body>
+</html>

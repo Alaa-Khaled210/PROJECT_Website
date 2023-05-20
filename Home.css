@@ -211,8 +211,7 @@ color: white;
 }
 
 
-footer{
-  
+footer{ 
   background-color:#1d9b58 ;
   font-size: small;
   margin-top: auto;/*push the footer to the bottom of the page*/
@@ -223,3 +222,11 @@ footer{
 }
 
 
+.p_about{
+  float: left;
+  font-weight: bold;
+  font-size: large;
+  color: #777;
+  padding: 10px;
+  margin: 10px;
+}
