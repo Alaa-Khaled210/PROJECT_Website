@@ -216,7 +216,17 @@ function deleteCookie() {
   }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////
+function inerror_case(){
+  let email = document.getElementById('email');
+  let password = document.getElementById('password');
+  let firstName=document.getElementById("fist_name");
+  let laststName=document.getElementById("last_name");
+  email="";
+  password="";
+  firstName="";
+  laststName="";
 
+}
 
 function store(){
     let email = document.getElementById('email');
@@ -231,24 +241,29 @@ function store(){
 
     if(email.value.length == 0){
         alert('Please fill in email');
+        
 
     }else if(password.value.length == 0){
         alert('Please fill in password');
+      
 
     }else if(email.value.length == 0 && password.value.length == 0){
         alert('Please fill in email and password');
-
+   
     }else if(password.value.length > 8){
         alert('Max of 8');
+       
 
     }else if(!password.value.match(numbers)){
         alert('please add 1 number');
+    
 
     }else if(!password.value.match(upperCaseLetters)){
         alert('please add 1 uppercase letter');
-
+        
     }else if(!password.value.match(lowerCaseLetters)){
         alert('please add 1 lowercase letter');
+
 
     }else{
         localStorage.setItem('email', email.value);
@@ -271,10 +286,11 @@ function check(){
 
     if(Login_email.value == storedEmail && Login_password.value == storedPw){
         alert('You are logged in.');
-        
+        return true;
        
     }else{
         alert('Error on login');
+       return false;
       
     }
 }
