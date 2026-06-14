@@ -8,6 +8,7 @@
   }
   h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
+   
     
   }
  img{
@@ -210,16 +211,16 @@ text-align: left;
 color: white;
 }
 
-
+/*
 footer{ 
   background-color:#1d9b58 ;
   font-size: small;
   margin-top: auto;/*push the footer to the bottom of the page*/
-  font-family: cursive;
+  /*font-family: cursive;
   padding-bottom: 3px;
   padding-top: 15px;
   margin-top: 10px;
-}
+}*/
 
 
 .p_about{
@@ -229,4 +230,167 @@ footer{
   color: #777;
   padding: 10px;
   margin: 10px;
+}
+
+
+
+/*------*/
+/* التنسيق العام للفوتر والخلفية */
+footer {
+  background-color: #111111; /* أسود داكن للخلفية */
+  color: #ffffff; /* نص أبيض */
+  font-family: Arial, sans-serif;
+  padding: 40px 20px 20px 20px;
+  direction: ltr; /* لجعل الترتيب من اليسار لليمين لأن النصوص إنجليزية */
+}
+
+/* العناوين داخل الفوتر */
+footer h3 {
+  color: #4caf50; /* لون أخضر حيوي مناسب للزهور */
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333; /* خط رمادي تحت العنوان */
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* الصف الأول (عن الموقع والاشتراك) */
+.row.primary {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+}
+
+/* تقسيم الأعمدة */
+.column {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* تنسيق النصوص والفقرات */
+.column p {
+  color: #cccccc; /* لون رمادي فاتح لسهولة القراءة */
+  line-height: 1.6;
+}
+
+/* تنسيق الـ Mark الأصفر ليتناسب مع الألوان الجديدة */
+footer mark {
+  background-color: #4caf50;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* تنسيق صندوق الاشتراك والزر */
+/* تنسيق صندوق الاشتراك والزر */
+.subscribe div {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px; /* طريقة سريعة وحديثة لعمل مسافة بين الصندوق والزر دون تداخل */
+}
+
+.subscribe input[type="email"] {
+  padding: 12px;
+  border: 1px solid #444;
+  background-color: #222; /* رمادي داكن جداً */
+  color: #fff;
+  border-radius: 4px; /* جعلت الحواف دائرية بالكامل من كل الجهات */
+  outline: none;
+  flex: 1;
+}
+
+.subscribe button {
+  padding: 12px 20px;
+  background-color: #4caf50; /* زر أخضر */
+  color: white;
+  border: none;
+  border-radius: 4px; /* حواف دائرية ناعمة */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+
+  /* الأسطر الجديدة لضمان التوسيط التام للكلمة */
+  display: inline-flex;
+  align-items: center;    /* التوسيط العمودي */
+  justify-content: center; /* التوسيط الأفقي */
+}
+
+
+.subscribe button:hover {
+  background-color: #388e3c; /* أخضر غامق عند تمرير الماوس */
+}
+
+
+/* أيقونات التواصل الاجتماعي */
+.social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social i {
+  font-size: 24px;
+  color: #aaaaaa; /* رمادي للأيقونات */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social i:hover {
+  color: #4caf50; /* تتحول للأخضر عند التمرير */
+}
+
+/* الصف الثاني (معلومات الاتصال) */
+.row.secondary {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #1a1a1a; /* رمادي داكن يقسم الفوتر */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.row.secondary div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.row.secondary i {
+  color: #4caf50; /* أيقونات الاتصال باللون الأخضر */
+  font-size: 18px;
+}
+
+.row.secondary p {
+  margin: 0;
+  color: #dddddd;
+}
+
+/* الصف الثالث (حقوق النشر والبريد) */
+.row.copyright {
+  text-align: center;
+  border-top: 1px solid #333; /* خط رمادي فاصل */
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #888888; /* رمادي متوسط */
+}
+
+.row.copyright a {
+  color: #4caf50;
+  text-decoration: none;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.row.copyright a:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
