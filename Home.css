@@ -63,6 +63,13 @@
   .hide {
     top: 70px;
   }
+
+.nav-buttons{
+  display: flex;
+  gap: 15px;
+  
+}
+  
   
   @media screen and (max-width: 700px){
   /* burge line بتاع ال menue*/
