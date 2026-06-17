@@ -278,7 +278,7 @@ function store(){
 //this checking login :)
 function check(){
     let storedEmail = localStorage.getItem('email');
-    let storedPw = localStorage.getItem('password');
+    let storedPw = localStorage.getItem('pw');
 
     let Login_email = document.getElementById('Login_email');
     let Login_password = document.getElementById('Login_password');
