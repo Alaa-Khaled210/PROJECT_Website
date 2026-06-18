@@ -33,6 +33,7 @@
   body {
     position: relative;
     height: 100vh;
+     padding-top: 100px;
    /* background-color: rgb(166, 213, 193);*/
   /* background-color: #95baa5;*/
   
@@ -44,14 +45,23 @@
 }
 
   #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
     background-color: #4b8b5ef5;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     padding: 15px 50px;
-    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
+    /*box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);*/
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     color: white;
+    transition: all 0.3s ease;
+   
   }
 
   nav ul {
@@ -109,9 +119,11 @@
   }
 
   #navbar {
-    position: relative;
+    position: fixed;
      z-index: 1000;
     padding: 15px 20px;
+    gap: 10px;
+    
   }
 
   ul {

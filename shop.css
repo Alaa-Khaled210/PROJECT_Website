@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin: 0;
     background-color: #f5f6f7;
+    padding-top:90px;
     
   }
   
@@ -119,6 +120,12 @@
 
 
 #navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
   background-color: #4b8b5ef5;
   display: flex;
   justify-content: space-between;
@@ -183,9 +190,10 @@ li a:hover {
 }
 
 #navbar {
-  position: relative;
+  position: fixed;
   padding: 15px 20px;
   z-index: 1000;
+  gap: 10px;
 }
 
 ul {

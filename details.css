@@ -6,6 +6,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0px 0px;
+  padding-top: 110px;
 }
 
 /* الحاوية الجديدة لترتيب الكروت بجانب بعضها كأعمدة */
@@ -114,6 +115,12 @@ fieldset button:hover {
 }
 
     #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-sizing: border-box;
       background-color: #4b8b5ef5;
       display: flex;
       justify-content: space-between;
@@ -122,6 +129,7 @@ fieldset button:hover {
       padding: 15px 50px;
       box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
       color: white;
+      
     }
   
     nav ul {
@@ -178,9 +186,10 @@ fieldset button:hover {
     }
   
     #navbar {
-      position: relative;
+      position: fixed;
       padding: 15px 20px;
       z-index: 1000;
+      gap: 10px;
     }
   
     ul {
