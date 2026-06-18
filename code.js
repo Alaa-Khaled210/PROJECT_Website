@@ -201,6 +201,19 @@ function edit()
  // alert('Your account has been updated successfully ;)');
 }
 
+function checkLogin(){
+    if(localStorage.getItem("isLoggedIn") !== "true"){
+        alert("Please login first");
+        window.location.href = "login.html";
+    }
+}
+ //If the user is already logged in and has login.html or register.html open, send them to the homepage:
+function redirectIfLoggedIn(){
+    if(localStorage.getItem("isLoggedIn") === "true"){
+        window.location.href = "index.html";
+    }
+}
+
 
       //---------------------HOME------------------------------//
 
