@@ -19,23 +19,23 @@
 
 
 
-<form action="index.html">
+<form onsubmit="return check()">
 <fieldset>
    
     <label for="email">Email: <input id="Login_email" type="email" name="email" placeholder="Enter Your Email" required/></label>
     <label for="password">Password: <input id="Login_password" type="password" name="password" placeholder="Enter Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required /></label>
    
     <div id="remember">
-        <label for="rememberMe"><input type="checkbox" value="lsRememberMe" id="rememberMe" class="inline" onclick="checkCookie()">
+        <label for="rememberMe"><input type="checkbox" value="lsRememberMe" id="rememberMe" class="inline"> <!--onclick="checkCookie()-->
             Remember me</label>
             <br>
 
-            <a href=".\register.html " id="registerBtn">Do not have Account Then Register </a>
+            <a href=".\register.html" id="registerBtn">Do not have Account Then Register </a>
 
     
         
     </div>
-    <input id= "login_btn" type="submit" value="Login" onclick="check()">
+    <input id= "login_btn" type="submit" value="Login">
 
 </fieldset>
 </form>

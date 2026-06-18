@@ -128,11 +128,11 @@ function check(){
         alert('You are logged in.');
 
         window.location.href = "index.html"
-        return true;
+        return false;
        
     }else{
         alert('Error on login');
-       return false;
+       return true;
       
     }
 }
@@ -149,15 +149,19 @@ function updateNavbar(){
     let loginBtn = document.getElementById("loginBtn");
     let registerBtn = document.getElementById("registerBtn");
     let logoutBtn = document.getElementById("logoutBtn");
+    let welcomeMessage = document.getElementById("welcomeMessage");
+    let firstName = localStorage.getItem("fist_name");
 
     if(isLoggedIn === "true"){
         if(loginBtn) loginBtn.style.display = "none";
         if(registerBtn) registerBtn.style.display = "none";
         if(logoutBtn) logoutBtn.style.display = "inline-block";
+        if(welcomeMessage) welcomeMessage.innerHTML = "Welcome, " + firstName +"🌷";
     }else{
         if(loginBtn) loginBtn.style.display = "inline-block";
         if(registerBtn) registerBtn.style.display = "inline-block";
         if(logoutBtn) logoutBtn.style.display = "none";
+        if(welcomeMessage) welcomeMessage.innerHTML = "";
     }
 }
 

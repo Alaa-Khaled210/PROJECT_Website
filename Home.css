@@ -37,6 +37,11 @@
   /* background-color: #95baa5;*/
   
   }
+  #welcomeMessage{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
   #navbar {
     background-color: #4b8b5ef5;
